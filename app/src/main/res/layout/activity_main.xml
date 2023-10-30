@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:background="@color/blue">
+
+       <ImageView
+           android:layout_width="450dp"
+           android:layout_height="300dp"
+           android:background="@color/blue"
+           android:src="@drawable/healthcalculator"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <EditText
+            android:id="@+id/text_Peso"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Digite seu Peso"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/text_Altura"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_below="@+id/text_Peso"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Digite sua altura"
+            android:inputType="numberDecimal"/>
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="3000dp"
+            android:src="@drawable/imc1" />
+
+        <Button
+
+            android:id="@+id/btnCalcular"
+            android:textColorLink="@color/blue"
+            android:textColor="@color/white"
+            android:text="CALCULAR"
+            android:backgroundTint="@color/blue"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

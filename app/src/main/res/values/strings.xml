@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HealthCalculator</string>
+<string name="mensagem_classificacao">Classificação: %1$s! </string>
+
+</resources>
